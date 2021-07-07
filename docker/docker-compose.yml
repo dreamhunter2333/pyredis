@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+    pyredis:
+        build:
+            context: ../
+            dockerfile: ./docker/Dockerfile
+        container_name: pyredis
+        ports:
+            - "8000:8000"
+        volumes:
+            - ./data:/app/data/
+            - ./.env:/app/.env

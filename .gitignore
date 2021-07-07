@@ -1,0 +1,7 @@
+venv/
+/data/
+/docker/data/
+/docker/env/
+.vscode/
+__pycache__/
+docker/.env
